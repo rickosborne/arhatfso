@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B908A28115714BBC00FE7074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908A28015714BBC00FE7074 /* UIKit.framework */; };
+		B908A28315714BBC00FE7074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908A28215714BBC00FE7074 /* Foundation.framework */; };
+		B908A28515714BBC00FE7074 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908A28415714BBC00FE7074 /* CoreGraphics.framework */; };
+		B908A28715714BBC00FE7074 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B908A28615714BBC00FE7074 /* CoreData.framework */; };
+		B908A28D15714BBC00FE7074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B908A28B15714BBC00FE7074 /* InfoPlist.strings */; };
+		B908A28F15714BBC00FE7074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B908A28E15714BBC00FE7074 /* main.m */; };
+		B908A29315714BBC00FE7074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B908A29215714BBC00FE7074 /* AppDelegate.m */; };
+		B908A29615714BBC00FE7074 /* arhatfso.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B908A29415714BBC00FE7074 /* arhatfso.xcdatamodeld */; };
+		B908A29F15714D0A00FE7074 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B908A29D15714D0A00FE7074 /* LogInViewController.m */; };
+		B908A2A015714D0A00FE7074 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B908A29E15714D0A00FE7074 /* LogInViewController.xib */; };
+		B908A2A41571508500FE7074 /* CourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B908A2A21571508500FE7074 /* CourseListViewController.m */; };
+		B908A2A51571508500FE7074 /* CourseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B908A2A31571508500FE7074 /* CourseListViewController.xib */; };
+		B97DECC115718DE000BC5C73 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DECBF15718DE000BC5C73 /* HomeViewController.m */; };
+		B97DECC215718DE000BC5C73 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DECC015718DE000BC5C73 /* HomeViewController.xib */; };
+		B97DECC7157192DF00BC5C73 /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DECC5157192DF00BC5C73 /* GradesViewController.m */; };
+		B97DECC8157192DF00BC5C73 /* GradesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DECC6157192DF00BC5C73 /* GradesViewController.xib */; };
+		B97DECCC1571938600BC5C73 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DECCA1571938600BC5C73 /* MediaViewController.m */; };
+		B97DECCD1571938600BC5C73 /* MediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DECCB1571938600BC5C73 /* MediaViewController.xib */; };
+		B986D9B31572D9DB00FA74D6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9B21572D9DB00FA74D6 /* ProfileViewController.m */; };
+		B986D9B81572DA2E00FA74D6 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9B61572DA2E00FA74D6 /* ActivitiesViewController.m */; };
+		B986D9B91572DA2E00FA74D6 /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9B71572DA2E00FA74D6 /* ActivitiesViewController.xib */; };
+		B986D9BD1572DA7200FA74D6 /* AnnouncementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9BB1572DA7200FA74D6 /* AnnouncementsViewController.m */; };
+		B986D9BE1572DA7200FA74D6 /* AnnouncementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9BC1572DA7200FA74D6 /* AnnouncementsViewController.xib */; };
+		B986D9C21572DB0400FA74D6 /* ReferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9C01572DB0400FA74D6 /* ReferencesViewController.m */; };
+		B986D9C31572DB0400FA74D6 /* ReferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9C11572DB0400FA74D6 /* ReferencesViewController.xib */; };
+		B986D9C71572DB2100FA74D6 /* CohortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9C51572DB2100FA74D6 /* CohortViewController.m */; };
+		B986D9C81572DB2100FA74D6 /* CohortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9C61572DB2100FA74D6 /* CohortViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B908A27C15714BBC00FE7074 /* arhatfso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arhatfso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B908A28015714BBC00FE7074 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B908A28215714BBC00FE7074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B908A28415714BBC00FE7074 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B908A28615714BBC00FE7074 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B908A28A15714BBC00FE7074 /* arhatfso-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "arhatfso-Info.plist"; sourceTree = "<group>"; };
+		B908A28C15714BBC00FE7074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B908A28E15714BBC00FE7074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B908A29015714BBC00FE7074 /* arhatfso-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "arhatfso-Prefix.pch"; sourceTree = "<group>"; };
+		B908A29115714BBC00FE7074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B908A29215714BBC00FE7074 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B908A29515714BBC00FE7074 /* arhatfso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = arhatfso.xcdatamodel; sourceTree = "<group>"; };
+		B908A29C15714D0A00FE7074 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		B908A29D15714D0A00FE7074 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		B908A29E15714D0A00FE7074 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		B908A2A11571508500FE7074 /* CourseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseListViewController.h; sourceTree = "<group>"; };
+		B908A2A21571508500FE7074 /* CourseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseListViewController.m; sourceTree = "<group>"; };
+		B908A2A31571508500FE7074 /* CourseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseListViewController.xib; sourceTree = "<group>"; };
+		B97DECBE15718DE000BC5C73 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B97DECBF15718DE000BC5C73 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B97DECC015718DE000BC5C73 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B97DECC4157192DF00BC5C73 /* GradesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradesViewController.h; sourceTree = "<group>"; };
+		B97DECC5157192DF00BC5C73 /* GradesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradesViewController.m; sourceTree = "<group>"; };
+		B97DECC6157192DF00BC5C73 /* GradesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GradesViewController.xib; sourceTree = "<group>"; };
+		B97DECC91571938600BC5C73 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		B97DECCA1571938600BC5C73 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		B97DECCB1571938600BC5C73 /* MediaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaViewController.xib; sourceTree = "<group>"; };
+		B986D9B11572D9DB00FA74D6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B986D9B21572D9DB00FA74D6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		B986D9B51572DA2E00FA74D6 /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		B986D9B61572DA2E00FA74D6 /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		B986D9B71572DA2E00FA74D6 /* ActivitiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
+		B986D9BA1572DA7200FA74D6 /* AnnouncementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementsViewController.h; sourceTree = "<group>"; };
+		B986D9BB1572DA7200FA74D6 /* AnnouncementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementsViewController.m; sourceTree = "<group>"; };
+		B986D9BC1572DA7200FA74D6 /* AnnouncementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementsViewController.xib; sourceTree = "<group>"; };
+		B986D9BF1572DB0400FA74D6 /* ReferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferencesViewController.h; sourceTree = "<group>"; };
+		B986D9C01572DB0400FA74D6 /* ReferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferencesViewController.m; sourceTree = "<group>"; };
+		B986D9C11572DB0400FA74D6 /* ReferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferencesViewController.xib; sourceTree = "<group>"; };
+		B986D9C41572DB2100FA74D6 /* CohortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CohortViewController.h; sourceTree = "<group>"; };
+		B986D9C51572DB2100FA74D6 /* CohortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CohortViewController.m; sourceTree = "<group>"; };
+		B986D9C61572DB2100FA74D6 /* CohortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CohortViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B908A27915714BBC00FE7074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B908A28115714BBC00FE7074 /* UIKit.framework in Frameworks */,
+				B908A28315714BBC00FE7074 /* Foundation.framework in Frameworks */,
+				B908A28515714BBC00FE7074 /* CoreGraphics.framework in Frameworks */,
+				B908A28715714BBC00FE7074 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B908A27115714BBC00FE7074 = {
+			isa = PBXGroup;
+			children = (
+				B908A28815714BBC00FE7074 /* arhatfso */,
+				B908A27F15714BBC00FE7074 /* Frameworks */,
+				B908A27D15714BBC00FE7074 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B908A27D15714BBC00FE7074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B908A27C15714BBC00FE7074 /* arhatfso.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B908A27F15714BBC00FE7074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B908A28015714BBC00FE7074 /* UIKit.framework */,
+				B908A28215714BBC00FE7074 /* Foundation.framework */,
+				B908A28415714BBC00FE7074 /* CoreGraphics.framework */,
+				B908A28615714BBC00FE7074 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B908A28815714BBC00FE7074 /* arhatfso */ = {
+			isa = PBXGroup;
+			children = (
+				B908A29115714BBC00FE7074 /* AppDelegate.h */,
+				B908A29215714BBC00FE7074 /* AppDelegate.m */,
+				B986D9B51572DA2E00FA74D6 /* ActivitiesViewController.h */,
+				B986D9B61572DA2E00FA74D6 /* ActivitiesViewController.m */,
+				B986D9B71572DA2E00FA74D6 /* ActivitiesViewController.xib */,
+				B986D9BA1572DA7200FA74D6 /* AnnouncementsViewController.h */,
+				B986D9BB1572DA7200FA74D6 /* AnnouncementsViewController.m */,
+				B986D9BC1572DA7200FA74D6 /* AnnouncementsViewController.xib */,
+				B986D9C41572DB2100FA74D6 /* CohortViewController.h */,
+				B986D9C51572DB2100FA74D6 /* CohortViewController.m */,
+				B986D9C61572DB2100FA74D6 /* CohortViewController.xib */,
+				B908A2A11571508500FE7074 /* CourseListViewController.h */,
+				B908A2A21571508500FE7074 /* CourseListViewController.m */,
+				B908A2A31571508500FE7074 /* CourseListViewController.xib */,
+				B97DECC4157192DF00BC5C73 /* GradesViewController.h */,
+				B97DECC5157192DF00BC5C73 /* GradesViewController.m */,
+				B97DECC6157192DF00BC5C73 /* GradesViewController.xib */,
+				B97DECBE15718DE000BC5C73 /* HomeViewController.h */,
+				B97DECBF15718DE000BC5C73 /* HomeViewController.m */,
+				B97DECC015718DE000BC5C73 /* HomeViewController.xib */,
+				B908A29C15714D0A00FE7074 /* LogInViewController.h */,
+				B908A29D15714D0A00FE7074 /* LogInViewController.m */,
+				B908A29E15714D0A00FE7074 /* LogInViewController.xib */,
+				B97DECC91571938600BC5C73 /* MediaViewController.h */,
+				B97DECCA1571938600BC5C73 /* MediaViewController.m */,
+				B97DECCB1571938600BC5C73 /* MediaViewController.xib */,
+				B986D9B11572D9DB00FA74D6 /* ProfileViewController.h */,
+				B986D9B21572D9DB00FA74D6 /* ProfileViewController.m */,
+				B986D9BF1572DB0400FA74D6 /* ReferencesViewController.h */,
+				B986D9C01572DB0400FA74D6 /* ReferencesViewController.m */,
+				B986D9C11572DB0400FA74D6 /* ReferencesViewController.xib */,
+				B908A29415714BBC00FE7074 /* arhatfso.xcdatamodeld */,
+				B908A28915714BBC00FE7074 /* Supporting Files */,
+			);
+			path = arhatfso;
+			sourceTree = "<group>";
+		};
+		B908A28915714BBC00FE7074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B908A28A15714BBC00FE7074 /* arhatfso-Info.plist */,
+				B908A28B15714BBC00FE7074 /* InfoPlist.strings */,
+				B908A28E15714BBC00FE7074 /* main.m */,
+				B908A29015714BBC00FE7074 /* arhatfso-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B908A27B15714BBC00FE7074 /* arhatfso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B908A29915714BBC00FE7074 /* Build configuration list for PBXNativeTarget "arhatfso" */;
+			buildPhases = (
+				B908A27815714BBC00FE7074 /* Sources */,
+				B908A27915714BBC00FE7074 /* Frameworks */,
+				B908A27A15714BBC00FE7074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arhatfso;
+			productName = arhatfso;
+			productReference = B908A27C15714BBC00FE7074 /* arhatfso.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B908A27315714BBC00FE7074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B908A27615714BBC00FE7074 /* Build configuration list for PBXProject "arhatfso" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B908A27115714BBC00FE7074;
+			productRefGroup = B908A27D15714BBC00FE7074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B908A27B15714BBC00FE7074 /* arhatfso */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B908A27A15714BBC00FE7074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B908A28D15714BBC00FE7074 /* InfoPlist.strings in Resources */,
+				B908A2A015714D0A00FE7074 /* LogInViewController.xib in Resources */,
+				B908A2A51571508500FE7074 /* CourseListViewController.xib in Resources */,
+				B97DECC215718DE000BC5C73 /* HomeViewController.xib in Resources */,
+				B97DECC8157192DF00BC5C73 /* GradesViewController.xib in Resources */,
+				B97DECCD1571938600BC5C73 /* MediaViewController.xib in Resources */,
+				B986D9B91572DA2E00FA74D6 /* ActivitiesViewController.xib in Resources */,
+				B986D9BE1572DA7200FA74D6 /* AnnouncementsViewController.xib in Resources */,
+				B986D9C31572DB0400FA74D6 /* ReferencesViewController.xib in Resources */,
+				B986D9C81572DB2100FA74D6 /* CohortViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B908A27815714BBC00FE7074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B908A28F15714BBC00FE7074 /* main.m in Sources */,
+				B908A29315714BBC00FE7074 /* AppDelegate.m in Sources */,
+				B908A29615714BBC00FE7074 /* arhatfso.xcdatamodeld in Sources */,
+				B908A29F15714D0A00FE7074 /* LogInViewController.m in Sources */,
+				B908A2A41571508500FE7074 /* CourseListViewController.m in Sources */,
+				B97DECC115718DE000BC5C73 /* HomeViewController.m in Sources */,
+				B97DECC7157192DF00BC5C73 /* GradesViewController.m in Sources */,
+				B97DECCC1571938600BC5C73 /* MediaViewController.m in Sources */,
+				B986D9B31572D9DB00FA74D6 /* ProfileViewController.m in Sources */,
+				B986D9B81572DA2E00FA74D6 /* ActivitiesViewController.m in Sources */,
+				B986D9BD1572DA7200FA74D6 /* AnnouncementsViewController.m in Sources */,
+				B986D9C21572DB0400FA74D6 /* ReferencesViewController.m in Sources */,
+				B986D9C71572DB2100FA74D6 /* CohortViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B908A28B15714BBC00FE7074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B908A28C15714BBC00FE7074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B908A29715714BBC00FE7074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B908A29815714BBC00FE7074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B908A29A15714BBC00FE7074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arhatfso/arhatfso-Prefix.pch";
+				INFOPLIST_FILE = "arhatfso/arhatfso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B908A29B15714BBC00FE7074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "arhatfso/arhatfso-Prefix.pch";
+				INFOPLIST_FILE = "arhatfso/arhatfso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B908A27615714BBC00FE7074 /* Build configuration list for PBXProject "arhatfso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B908A29715714BBC00FE7074 /* Debug */,
+				B908A29815714BBC00FE7074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B908A29915714BBC00FE7074 /* Build configuration list for PBXNativeTarget "arhatfso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B908A29A15714BBC00FE7074 /* Debug */,
+				B908A29B15714BBC00FE7074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B908A29415714BBC00FE7074 /* arhatfso.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B908A29515714BBC00FE7074 /* arhatfso.xcdatamodel */,
+			);
+			currentVersion = B908A29515714BBC00FE7074 /* arhatfso.xcdatamodel */;
+			path = arhatfso.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B908A27315714BBC00FE7074 /* Project object */;
+}
