@@ -34,6 +34,7 @@
 		B986D9C31572DB0400FA74D6 /* ReferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9C11572DB0400FA74D6 /* ReferencesViewController.xib */; };
 		B986D9C71572DB2100FA74D6 /* CohortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B986D9C51572DB2100FA74D6 /* CohortViewController.m */; };
 		B986D9C81572DB2100FA74D6 /* CohortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986D9C61572DB2100FA74D6 /* CohortViewController.xib */; };
+		B986D9D21572E5EB00FA74D6 /* corner10-640.png in Resources */ = {isa = PBXBuildFile; fileRef = B986D9D11572E5EB00FA74D6 /* corner10-640.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		B986D9C41572DB2100FA74D6 /* CohortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CohortViewController.h; sourceTree = "<group>"; };
 		B986D9C51572DB2100FA74D6 /* CohortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CohortViewController.m; sourceTree = "<group>"; };
 		B986D9C61572DB2100FA74D6 /* CohortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CohortViewController.xib; sourceTree = "<group>"; };
+		B986D9D11572E5EB00FA74D6 /* corner10-640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corner10-640.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		B908A27115714BBC00FE7074 = {
 			isa = PBXGroup;
 			children = (
+				B986D9D01572E5EB00FA74D6 /* assets */,
 				B908A28815714BBC00FE7074 /* arhatfso */,
 				B908A27F15714BBC00FE7074 /* Frameworks */,
 				B908A27D15714BBC00FE7074 /* Products */,
@@ -174,6 +177,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B986D9D01572E5EB00FA74D6 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B986D9D11572E5EB00FA74D6 /* corner10-640.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +245,7 @@
 				B986D9BE1572DA7200FA74D6 /* AnnouncementsViewController.xib in Resources */,
 				B986D9C31572DB0400FA74D6 /* ReferencesViewController.xib in Resources */,
 				B986D9C81572DB2100FA74D6 /* CohortViewController.xib in Resources */,
+				B986D9D21572E5EB00FA74D6 /* corner10-640.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
