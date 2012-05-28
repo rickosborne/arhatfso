@@ -47,26 +47,36 @@
 - (void)fsoUserDidLoadMainProfile
 {
 	NSLog(@"fsoUserDidLoadMainProfile");	
+	status.text = @"Loading photo ...";
+	progress.progress = 0.5f;
 }
 
 - (void)fsoUserDidLoadPhoto
 {
 	NSLog(@"fsoUserDidLoadMainProfile");	
+	status.text = @"Loading contact info ...";
+	progress.progress = 0.7f;
 }
 
 - (void)fsoUserDidLoadContactInfo
 {
 	NSLog(@"fsoUserDidLoadMainProfile");	
+	status.text = @"Reticulating splines ...";
+	progress.progress = 0.9f;
 }
 
 - (void)fsoUserDidLogIn
 {
 	NSLog(@"fsoUserDidLogIn");	
+	status.text = @"Success!";
+	progress.progress = 1.0f;
 }
 
 - (void)fsoUserDidAuthenticate
 {
 	NSLog(@"fsoUserDidAuthenticate");
+	status.text = @"Loading profile ...";
+	progress.progress = 0.3f;
 }
 
 - (void)fsoUserFailedToLogIn:(NSString *)errorMessage
@@ -105,6 +115,7 @@
 	if ((usernameField.text.length > 0) && (passwordField.text.length > 0))
 	{
 		status.text = @"Authenticating ...";
+		progress.progress = 0.1f;
 		[self setWorkingState];
 		[[FSOService defaultService] logInUser:usernameField.text withPassword:passwordField.text withListener:self];
 	}

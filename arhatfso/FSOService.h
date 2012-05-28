@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FSOAuthenticator.h"
 
 @protocol FSOLogInListener <NSObject>
 
@@ -18,7 +19,10 @@
 
 @end
 
-@interface FSOService : NSObject
+@interface FSOService : NSObject <FSOAuthenticatorListener>
+{
+	id<FSOLogInListener> logInListener;
+}
 
 + (FSOService *)defaultService;
 

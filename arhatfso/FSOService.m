@@ -11,11 +11,26 @@ static FSOService *defaultService = nil;
 
 @implementation FSOService
 
+- (void)fsoAuthenticationDidSucceed
+{
+	NSLog(@"fsoAuthenticationDidSucceed");
+	[logInListener fsoUserDidAuthenticate];
+}
+
+- (void)fsoAuthenticationDidFail:(NSError *)error
+{
+	NSLog(@"fsoAuthenticationDidFail:%@", error);
+	[logInListener fsoUserFailedToLogIn:error.localizedDescription];
+}
+
 - (void)logInUser:(NSString *)username
 	 withPassword:(NSString *)password
 	 withListener:(id<FSOLogInListener>)listener
 {
-	[listener fsoUserFailedToLogIn:@"Not implemented"];
+	NSLog(@"logInUser:%@", username);
+	logInListener = listener;
+	FSOAuthenticator *auth = [[FSOAuthenticator alloc] initWithUser:username withPassword:password withListener:self];
+	auth = nil;
 }
 
 + (FSOService *)defaultService
