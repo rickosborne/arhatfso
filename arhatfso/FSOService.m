@@ -13,11 +13,9 @@ static FSOService *defaultService = nil;
 
 - (void)authenticateUser:(NSString *)username
 			withPassword:(NSString *)password
-			  withTarget:(id)target
-			   onSuccess:(NSString *)success
-			   onFailure:(NSString *)failure
+		   withRecipient:(id<FSOAuthenticationRecipient>)recipient
 {
-	[target performSelector:NSSelectorFromString(failure) withObject:@"Not implemented"];
+	[recipient fsoUserFailedAuthentication:@"Not implemented"];
 }
 
 + (FSOService *)defaultService

@@ -6,8 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSOService.h"
 
-@interface LogInViewController : UIViewController
+@interface LogInViewController : UIViewController <FSOAuthenticationRecipient>
 {
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;

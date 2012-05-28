@@ -44,12 +44,12 @@
 	[self viewDidAppear:NO];
 }
 
-- (void)userDidAuthenticate
+- (void)fsoUserDidAuthenticate
 {
 	NSLog(@"userDidAuthenticate");
 }
 
-- (void)userFailedToAuthenticate:(NSString *)errorMessage
+- (void)fsoUserFailedAuthentication:(NSString *)errorMessage
 {
 	// [self setEntryState];
 	NSLog(@"userFailedToAuthenticate:%@", errorMessage);
@@ -86,7 +86,7 @@
 	{
 		status.text = @"Authenticating ...";
 		[self setWorkingState];
-		[[FSOService defaultService] authenticateUser:usernameField.text withPassword:passwordField.text withTarget:self onSuccess:@"userDidAuthenticate" onFailure:@"userFailedToAuthenticate:"];
+		[[FSOService defaultService] authenticateUser:usernameField.text withPassword:passwordField.text withRecipient:self];
 	}
 }
 

@@ -7,10 +7,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol FSOAuthenticationRecipient <NSObject>
+
+- (void)fsoUserDidAuthenticate;
+- (void)fsoUserFailedAuthentication:(NSString *)errorMessage;
+
+@end
+
 @interface FSOService : NSObject
 
 + (FSOService *)defaultService;
 
-- (void)authenticateUser:(NSString *) username withPassword:(NSString *) password withTarget:(id)target onSuccess:(NSString *)success onFailure:(NSString *)failure;
+- (void)authenticateUser:(NSString *) username withPassword:(NSString *) password withRecipient:(id)recipient;
 
 @end
