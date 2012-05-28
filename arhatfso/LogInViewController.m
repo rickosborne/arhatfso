@@ -9,6 +9,57 @@
 
 @implementation LogInViewController
 
+- (void)disableControl:(UIControl *)control
+{
+	control.alpha = 0.1f;
+	control.enabled = NO;
+	control.userInteractionEnabled = NO;
+}
+
+- (void)enableControl:(UIControl *)control
+{
+	control.alpha = 1.0f;
+	control.enabled = YES;
+	control.userInteractionEnabled = YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	if (usernameField.text.length > 0)
+	{
+		[passwordField becomeFirstResponder];
+	}
+	else
+	{
+		[usernameField becomeFirstResponder];
+	}
+}
+
+- (IBAction)onFieldChange:(id)sender
+{
+	 if ((usernameField.text.length > 0) && (passwordField.text.length > 0))
+	 {
+		 [self enableControl:continueButton];
+	 }
+	else
+	{
+		[self disableControl:continueButton];
+	}
+}
+
+- (IBAction)onContinue:(id)sender
+{
+	if ((usernameField.text.length > 0) && (passwordField.text.length > 0))
+	{
+		status.text = @"Authenticating ...";
+		progress.hidden = NO;
+		[self.view endEditing:YES];
+		[self disableControl:usernameField];
+		[self disableControl:passwordField];
+		[self disableControl:continueButton];
+	}
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,10 +83,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+	status.text = @"";
+	progress.hidden = YES;
+	continueButton.enabled = NO;
+	continueButton.userInteractionEnabled = NO;
+	continueButton.alpha = 0.1;
 }
 
 - (void)viewDidUnload
 {
+	continueButton = nil;
+	progress = nil;
+	status = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -19,6 +19,10 @@
 		B908A2A015714D0A00FE7074 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B908A29E15714D0A00FE7074 /* LogInViewController.xib */; };
 		B908A2A41571508500FE7074 /* CourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B908A2A21571508500FE7074 /* CourseListViewController.m */; };
 		B908A2A51571508500FE7074 /* CourseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B908A2A31571508500FE7074 /* CourseListViewController.xib */; };
+		B90D61B41572F4BB002CBE48 /* hex20.png in Resources */ = {isa = PBXBuildFile; fileRef = B90D61B31572F4BB002CBE48 /* hex20.png */; };
+		B90D61B71572F5F2002CBE48 /* hex10-full.png in Resources */ = {isa = PBXBuildFile; fileRef = B90D61B61572F5F2002CBE48 /* hex10-full.png */; };
+		B90D61B91572F6B4002CBE48 /* hex2-full.png in Resources */ = {isa = PBXBuildFile; fileRef = B90D61B81572F6B4002CBE48 /* hex2-full.png */; };
+		B90D61BB1572FC42002CBE48 /* arhat-for-fso-creamsicle.png in Resources */ = {isa = PBXBuildFile; fileRef = B90D61BA1572FC42002CBE48 /* arhat-for-fso-creamsicle.png */; };
 		B97DECC115718DE000BC5C73 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DECBF15718DE000BC5C73 /* HomeViewController.m */; };
 		B97DECC215718DE000BC5C73 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97DECC015718DE000BC5C73 /* HomeViewController.xib */; };
 		B97DECC7157192DF00BC5C73 /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DECC5157192DF00BC5C73 /* GradesViewController.m */; };
@@ -56,6 +60,10 @@
 		B908A2A11571508500FE7074 /* CourseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseListViewController.h; sourceTree = "<group>"; };
 		B908A2A21571508500FE7074 /* CourseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseListViewController.m; sourceTree = "<group>"; };
 		B908A2A31571508500FE7074 /* CourseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseListViewController.xib; sourceTree = "<group>"; };
+		B90D61B31572F4BB002CBE48 /* hex20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hex20.png; sourceTree = "<group>"; };
+		B90D61B61572F5F2002CBE48 /* hex10-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hex10-full.png"; sourceTree = "<group>"; };
+		B90D61B81572F6B4002CBE48 /* hex2-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hex2-full.png"; sourceTree = "<group>"; };
+		B90D61BA1572FC42002CBE48 /* arhat-for-fso-creamsicle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arhat-for-fso-creamsicle.png"; sourceTree = "<group>"; };
 		B97DECBE15718DE000BC5C73 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B97DECBF15718DE000BC5C73 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B97DECC015718DE000BC5C73 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +188,10 @@
 		B986D9D01572E5EB00FA74D6 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				B90D61BA1572FC42002CBE48 /* arhat-for-fso-creamsicle.png */,
+				B90D61B61572F5F2002CBE48 /* hex10-full.png */,
+				B90D61B81572F6B4002CBE48 /* hex2-full.png */,
+				B90D61B31572F4BB002CBE48 /* hex20.png */,
 				B986D9D11572E5EB00FA74D6 /* corner10-640.png */,
 			);
 			path = assets;
@@ -246,6 +258,10 @@
 				B986D9C31572DB0400FA74D6 /* ReferencesViewController.xib in Resources */,
 				B986D9C81572DB2100FA74D6 /* CohortViewController.xib in Resources */,
 				B986D9D21572E5EB00FA74D6 /* corner10-640.png in Resources */,
+				B90D61B41572F4BB002CBE48 /* hex20.png in Resources */,
+				B90D61B71572F5F2002CBE48 /* hex10-full.png in Resources */,
+				B90D61B91572F6B4002CBE48 /* hex2-full.png in Resources */,
+				B90D61BB1572FC42002CBE48 /* arhat-for-fso-creamsicle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
