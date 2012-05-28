@@ -11,4 +11,9 @@ This app is a proof of concept intended to be used as an example codebase to
 teach students how to build medium-sized web-enabled IOS apps.  It is _not_
 intended to be a production-quality app.
 
+F.A.Q.
+------
+
+_What is an *arhat*?_
+It depends on who you ask. [Read the Wikipedia article.](http://en.wikipedia.org/wiki/Arhat_%28Buddhism%29)
 
