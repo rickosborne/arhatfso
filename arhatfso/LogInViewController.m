@@ -44,15 +44,35 @@
 	[self viewDidAppear:NO];
 }
 
-- (void)fsoUserDidAuthenticate
+- (void)fsoUserDidLoadMainProfile
 {
-	NSLog(@"userDidAuthenticate");
+	NSLog(@"fsoUserDidLoadMainProfile");	
 }
 
-- (void)fsoUserFailedAuthentication:(NSString *)errorMessage
+- (void)fsoUserDidLoadPhoto
+{
+	NSLog(@"fsoUserDidLoadMainProfile");	
+}
+
+- (void)fsoUserDidLoadContactInfo
+{
+	NSLog(@"fsoUserDidLoadMainProfile");	
+}
+
+- (void)fsoUserDidLogIn
+{
+	NSLog(@"fsoUserDidLogIn");	
+}
+
+- (void)fsoUserDidAuthenticate
+{
+	NSLog(@"fsoUserDidAuthenticate");
+}
+
+- (void)fsoUserFailedToLogIn:(NSString *)errorMessage
 {
 	// [self setEntryState];
-	NSLog(@"userFailedToAuthenticate:%@", errorMessage);
+	NSLog(@"fsoUserFailedToLogIn:%@", errorMessage);
 }
 	 
 - (void)viewDidAppear:(BOOL)animated
@@ -86,7 +106,7 @@
 	{
 		status.text = @"Authenticating ...";
 		[self setWorkingState];
-		[[FSOService defaultService] authenticateUser:usernameField.text withPassword:passwordField.text withRecipient:self];
+		[[FSOService defaultService] logInUser:usernameField.text withPassword:passwordField.text withListener:self];
 	}
 }
 

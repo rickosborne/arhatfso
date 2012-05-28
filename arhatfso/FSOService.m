@@ -11,11 +11,11 @@ static FSOService *defaultService = nil;
 
 @implementation FSOService
 
-- (void)authenticateUser:(NSString *)username
-			withPassword:(NSString *)password
-		   withRecipient:(id<FSOAuthenticationRecipient>)recipient
+- (void)logInUser:(NSString *)username
+	 withPassword:(NSString *)password
+	 withListener:(id<FSOLogInListener>)listener
 {
-	[recipient fsoUserFailedAuthentication:@"Not implemented"];
+	[listener fsoUserFailedToLogIn:@"Not implemented"];
 }
 
 + (FSOService *)defaultService

@@ -1,4 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ContactType" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DegreeProgram" syncable="YES">
+        <attribute name="delivery" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FSOUser" syncable="YES">
+        <attribute name="lastLoginDate" attributeType="Date" syncable="YES"/>
+        <attribute name="password" attributeType="String" syncable="YES"/>
+        <attribute name="sessionCookie" attributeType="String" syncable="YES"/>
+        <attribute name="username" attributeType="String" syncable="YES"/>
+        <relationship name="profile" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" syncable="YES"/>
+    </entity>
+    <entity name="Profile" syncable="YES">
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" attributeType="String" syncable="YES"/>
+        <attribute name="hometown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interests" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skills" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProfileContact" inverseName="profile" inverseEntity="ProfileContact" syncable="YES"/>
+        <relationship name="programs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProfileProgram" inverseName="profile" inverseEntity="ProfileProgram" syncable="YES"/>
+        <relationship name="timesToCall" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeToCall" syncable="YES"/>
+        <relationship name="timeZone" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TimeZone" syncable="YES"/>
+    </entity>
+    <entity name="ProfileContact" syncable="YES">
+        <attribute name="value" attributeType="String" syncable="YES"/>
+        <relationship name="contactType" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ContactType" syncable="YES"/>
+        <relationship name="profile" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="contacts" inverseEntity="Profile" syncable="YES"/>
+    </entity>
+    <entity name="ProfileProgram" syncable="YES">
+        <attribute name="startDate" attributeType="Date" syncable="YES"/>
+        <relationship name="profile" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="programs" inverseEntity="Profile" syncable="YES"/>
+        <relationship name="program" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DegreeProgram" syncable="YES"/>
+    </entity>
+    <entity name="TestUser" syncable="YES">
+        <attribute name="studentNumber" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TimeToCall" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TimeZone" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FSOUser" positionX="18" positionY="240" width="128" height="120"/>
+        <element name="Profile" positionX="189" positionY="213" width="128" height="255"/>
+        <element name="DegreeProgram" positionX="619" positionY="369" width="128" height="90"/>
+        <element name="TimeToCall" positionX="468" positionY="486" width="128" height="75"/>
+        <element name="TimeZone" positionX="313" positionY="621" width="128" height="75"/>
+        <element name="ContactType" positionX="621" positionY="231" width="128" height="75"/>
+        <element name="ProfileContact" positionX="432" positionY="216" width="128" height="90"/>
+        <element name="ProfileProgram" positionX="448" positionY="360" width="128" height="90"/>
+        <element name="TestUser" positionX="18" positionY="423" width="128" height="60"/>
+    </elements>
 </model>

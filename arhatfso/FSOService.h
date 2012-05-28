@@ -7,10 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FSOAuthenticationRecipient <NSObject>
+@protocol FSOLogInListener <NSObject>
 
-- (void)fsoUserDidAuthenticate;
-- (void)fsoUserFailedAuthentication:(NSString *)errorMessage;
+- (void)fsoUserDidAuthenticate; // first
+- (void)fsoUserDidLoadMainProfile; // second
+- (void)fsoUserDidLoadPhoto; // third
+- (void)fsoUserDidLoadContactInfo; // fourth
+- (void)fsoUserDidLogIn; // the fifth and final call
+- (void)fsoUserFailedToLogIn:(NSString *)errorMessage;
 
 @end
 
@@ -18,6 +22,6 @@
 
 + (FSOService *)defaultService;
 
-- (void)authenticateUser:(NSString *) username withPassword:(NSString *) password withRecipient:(id)recipient;
+- (void)logInUser:(NSString *) username withPassword:(NSString *) password withListener:(id)listener;
 
 @end
