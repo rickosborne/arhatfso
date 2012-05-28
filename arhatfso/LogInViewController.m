@@ -6,6 +6,7 @@
 //
 
 #import "LogInViewController.h"
+#import "FSOService.h"
 
 @implementation LogInViewController
 
@@ -23,8 +24,40 @@
 	control.userInteractionEnabled = YES;
 }
 
+- (void)setWorkingState
+{
+	progress.hidden = NO;
+	[self.view endEditing:YES];
+	[self disableControl:usernameField];
+	[self disableControl:passwordField];
+	[self disableControl:continueButton];	
+}
+
+- (void)setEntryState
+{
+	status.text = @"";
+	progress.hidden = YES;
+	passwordField.text = @"";
+	[self disableControl:continueButton];
+	[self enableControl:usernameField];
+	[self enableControl:passwordField];
+	[self viewDidAppear:NO];
+}
+
+- (void)userDidAuthenticate
+{
+	NSLog(@"userDidAuthenticate");
+}
+
+- (void)userFailedToAuthenticate:(NSString *)errorMessage
+{
+	// [self setEntryState];
+	NSLog(@"userFailedToAuthenticate:%@", errorMessage);
+}
+	 
 - (void)viewDidAppear:(BOOL)animated
 {
+	// save the user a tap by focusing the appropriate text field
 	if (usernameField.text.length > 0)
 	{
 		[passwordField becomeFirstResponder];
@@ -52,11 +85,8 @@
 	if ((usernameField.text.length > 0) && (passwordField.text.length > 0))
 	{
 		status.text = @"Authenticating ...";
-		progress.hidden = NO;
-		[self.view endEditing:YES];
-		[self disableControl:usernameField];
-		[self disableControl:passwordField];
-		[self disableControl:continueButton];
+		[self setWorkingState];
+		[[FSOService defaultService] authenticateUser:usernameField.text withPassword:passwordField.text withTarget:self onSuccess:@"userDidAuthenticate" onFailure:@"userFailedToAuthenticate:"];
 	}
 }
 
@@ -83,11 +113,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-	status.text = @"";
-	progress.hidden = YES;
-	continueButton.enabled = NO;
-	continueButton.userInteractionEnabled = NO;
-	continueButton.alpha = 0.1;
+	[self setEntryState];
 }
 
 - (void)viewDidUnload
